@@ -1,0 +1,466 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar */
+
+nav{
+    height: 60px;
+    color: white;
+    background-color: rgb(123, 91, 175);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Search Bar */
+
+.SearchBar {
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding-top: 3rem;
+}
+
+.search_container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 8px; 
+    border: 2px solid rgb(123, 91, 175);
+    overflow: hidden; 
+}
+
+.search_input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+.search_icon {
+    height: 42px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(123, 91, 175);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Featured Categories Section */
+
+.FeaturedCategories {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgb(232, 234, 245);
+}
+
+.FeaturedCategories h2 {
+    color: rgb(54, 20, 85);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category {
+    width: 40%;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: white; 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.category-link img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-link h3 {
+    background-color: rgb(123, 91, 175);
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Review Section */
+
+.reviews {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(232, 234, 245);
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(54, 20, 85); 
+}
+
+.review {
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative;
+}
+
+.review p {
+    font-size: 1.1rem;
+    color: #333;
+    font-style: italic;
+    margin: 0;
+}
+
+.review::before {
+    content: "“";
+    font-size: 2rem;
+    color: rgb(123, 91, 175);
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
+
+.review::after {
+    content: "”";
+    font-size: 2rem;
+    color: rgb(123, 91, 175);
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+}
+
+/* About Us Page */
+
+.about-us {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    color: rgb(54, 20, 85);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us h2 {
+    font-size: 1.8rem;
+    color: rgb(54, 20, 85);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-us p {
+    text-align: justify;
+    color: #555;
+}
+
+.about-us h1, .about-us h2 {
+    font-weight: 700;
+}
+
+.about-us h2::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(54, 20, 85);
+    margin: 0.5rem auto;
+}
+
+/* Product Page */
+.AllProducts {
+    max-width: 1200px; 
+    margin: 2rem auto; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.AllProducts h2 {
+    font-size: 2.5rem; 
+    color: rgb(54, 20, 85); 
+    margin-bottom: 2rem; 
+}
+
+.products {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+}
+
+.product {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 1.5rem;
+    background-color: #fff; 
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+.product:hover {
+    transform: scale(1.03); 
+}
+
+.product img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px 8px 0 0;
+}
+
+.product p {
+    margin: 0.75rem 0; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+}
+
+button {
+    background-color: rgb(123, 91, 175); 
+    color: white; 
+    border: none; 
+    padding: 0.75rem 1.25rem; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #a46bb3; 
+}
+
+
+/* Contact Us Page */
+
+.contact-us {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #e3d8e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 2.5rem;
+    color: rgb(54, 20, 85);
+    margin-bottom: 1.5rem;
+}
+
+.contact-us label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    width: calc(100% - 20px);
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-us textarea {
+    resize: vertical;
+}
+
+.contact-us button {
+    background-color: rgb(123, 91, 175);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #a46bb3;
+}
+
+/* My Cart Page */
+
+.cart {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ebdeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart h1 {
+    font-size: 2.5rem;
+    color: rgb(54, 20, 85);
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(54, 20, 85);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cart-summary {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.cart-summary strong {
+    font-size: 1.5rem;
+}
+
+.cart-summary button {
+    background-color: rgb(54, 20, 85);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cart-summary button:hover {
+    background-color: #a46bb3;
+}
+
+
+/* Gadgets & Technology */
+
+.CategoryTitle {
+    max-width: 1200px; 
+    margin: 2rem auto; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.CategoryTitle h2 {
+    font-size: 2.5rem; 
+    color: rgb(54, 20, 85); 
+    margin-bottom: 2rem; 
+}
+
+.ProductListing h3{
+    font-size: 2rem; 
+    color: rgb(54, 20, 85); 
+    margin-bottom: 2rem;
+}
+
+.products {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+}
+.BackHome {
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 20px;
+    background-color: rgb(123, 91, 175); 
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(123, 91, 175);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+}
+

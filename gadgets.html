@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology Gadgets | Shopping Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Home&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
-            <a href="about.html">About Us&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  </a>
-            <a href="products.html">Products&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
-            <a href="cart.html">My Cart&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="index.html" class="navbar">Home</a>
+            <a href="products.html" class="navbar">Products</a>
+            <a href="about.html" class="navbar">About Us</a>
+            <a href="contact.html" class="navbar">Contact Us</a>
+            <i class="fa-solid fa-cart-shopping navbar"><a href="cart.html"> My Cart</a></i>
         </nav>
     </header>
     <hr>
-    <br>
     <section class="CategoryTitle">
         <h2>Technology & Gadgets</h2>
     </section>
@@ -34,7 +35,6 @@
                 <button>Add to Cart</button>
                 
             </div>
-            <br>
 
             <div class= "product">
                 <img src="img/Product6.jpg" alt="Headphones" height="250">
@@ -46,7 +46,6 @@
                 <p><b>Product Price:</b> 8999 pkr</p>
                 <button>Add to Cart</button>
             </div>
-            <br>
 
             <div class= "product">
                 <img src="img/Product7.jpg" alt="Camera" height="220">
@@ -57,7 +56,6 @@
                 <p><b>Product Price:</b> 10999 pkr</p>
                 <button>Add to Cart</button>
             </div>
-            <br>
             <div class= "product">
                 <img src="img/Product11.jpg" alt="Airpods" height="250">
                 <p><b>Product:</b>AirPulse True Wireless Earbuds</p>
@@ -67,7 +65,6 @@
                 <p><b>Product Price:</b> 4540 pkr</p>
                 <button>Add to Cart</button>
             </div>
-            <br>
             <div class= "product">
                 <img src="img/Product12.jpg" alt="Keyboard" height="210">
                 <p><b>Product:</b>Wireless Keyboard</p>
@@ -81,10 +78,7 @@
 
         </div>
     </section>
-
-    <br>
-    <br>
-    <button>
+    <button class="BackHome">
         <a href="index.html">Back to Home</a>
     </button>
 
